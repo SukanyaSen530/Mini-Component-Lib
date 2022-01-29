@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="./card.css">
+</head>
+<body>
+
+    <section class="content">
+
+        <aside>
+            <select name="Card-Options" id="Card-Options">
+              <option value="no-image">No Image</option>
+                <option value="basic">Basic</option>
+                <option value="basic-text-over-media">Basic w/Text over Media</option>
+                <option value="basic-with-header">Basic w/ Header</option>
+                <option value="basic-only-buttons">Basic w/ Only Buttons</option>
+                <option value="basic-only-icons">Basic w/ Only Icons</option>
+                <option value="horizontal-image-text">Horizontal Image and Text</option>
+            </select>
+        </aside>
+
+        
+
+        <main>
+              <!-- Card -->
+              <article class="card">
+                <header class="card-header" tabindex="0">
+                  <div class="card-image" style="background-image: url(&quot;https://cdn.britannica.com/65/161665-050-C4B1FA75/Waves-North-Shore-Oahu-Hawaiian-Islands.jpg&quot;);"></div>
+                  <div class="card-details">
+                    <h4 class="card-title">Our Changing Planet</h4>
+                    <h6 class="card-title-author">by Kurt Wagner</h6>
+                  </div>
+                  <p class="card-content">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                </header>
+                <footer class="card-actions">
+                  <div class="card-button-group-1">
+                    <button>Read</button>
+                    <button>Bookmark</button>
+                  </div>
+                  <div class="card-button-group-2">
+                    <button> <i class="far fa-heart"></i></button>
+                    <button><i class="fas fa-share-alt"></i></button>
+                    <button><i class="fas fa-ellipsis-v"></i></button>
+                  </div>
+                </footer>
+            </article>
+        
+        </main>
+
+
+    </section>
+
+    <script src="./card.js"></script>
+</body>
+</html>

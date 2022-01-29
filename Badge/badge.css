@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --main-color: rgb(63, 81, 181);
+  --secondary-color: rgb(224, 224, 224);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.badge-container {
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 5px;
+  padding: 0.7rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.badge-container h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: gray;
+  padding: 10px 0;
+}
+
+.badge-container p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  position: relative;
+}
+
+.badge span {
+  background-color: rgb(77, 104, 62);
+  color: white;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  font-size: 0.5rem;
+}
+
+.badge.large span {
+  height: 1.4rem;
+  width: 1.4rem;
+  right: -18px;
+}
+
+.badge.badge-btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.badge.badge-btn:hover {
+  opacity: 0.8;
+}
+
+.badge i {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.badge.hideshow span {
+  display: none;
+}

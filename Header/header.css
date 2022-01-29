@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --main-color: rgb(98, 0, 238);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(224, 223, 223);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.demo-section {
+  width: 80%;
+  height: 200px;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  overflow-y: scroll;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  background-color: var(--main-color);
+  color: white;
+  height: 48px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar .navbar-title {
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar ul > li {
+  margin: 0 0.2rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.navbar .hamburger-menu {
+  margin-right: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.navbar ul > li:hover,
+.navbar .hamburger-menu:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+  transition: 0.5s;
+}
+
+.content {
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+/* Fixed */
+
+.navbar.fixed {
+  position: sticky;
+  top: 0;
+}
+
+/* Prominent */
+.navbar.prominent {
+  height: 100px;
+  align-items: flex-start;
+}
+
+.navbar.prominent .navbar-title {
+  align-self: end;
+}
+
+/* Short */
+.navbar.short {
+  border-bottom-right-radius: 1rem;
+  width: 90px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: sticky;
+  padding: 0.3rem;
+  top: 0;
+}
+
+.navbar.short ul {
+  margin-left: 0;
+}
+
+/* Short-Collapse */
+.navbar.collapse {
+  border-bottom-right-radius: 1rem;
+  width: 90px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: sticky;
+  padding: 0.3rem;
+  top: 0;
+}
+
+.navbar.collapse ul {
+  margin-left: 0;
+}
+
+.navbar.collapse .navbar-title {
+  display: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chips.css">
+     <!-- font-awesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+     crossorigin="anonymous"
+   />
+    <title>Chips</title>
+</head>
+<body>
+
+    <section class="chips-container">
+        <h3>All Chips</h3>
+
+        <p class="chips danger">Node</p>
+        <p class="chips cancel"> Javascript <p>
+        <p class="chips warning">Mongo<p>
+        <p class="chips primary">React<p>
+        <p class="chips subtle stacked">Angular</p>
+    </section>
+    
+    <section class="chips-container">
+        <h3>Basic chips</h3>
+
+        <p class="chips">none</p>
+        <p class="chips primary">Primary<p>
+    </section>
+
+    <section class="chips-container">
+        <h3>Stacked chips</h3>
+        
+        <p class="chips primary stacked">none</p>
+        <p class="chips stacked">Primary<p>
+        <p class="chips subtle stacked">Accent<p>
+        <p class="chips danger stacked">Warn</p>
+    </section>
+
+    <section class="chips-container">
+        <h3>Chips with input</h3>
+
+        <div class="content"></div>
+
+        <input type="text" id="chipsInput">
+    </section>
+
+    <section class="chips-container">
+        <h3>Chips Drag and Drop</h3>
+
+        <div class="dragdrop">
+            <p class="chips draggable warning">Banana</p>
+            <p class="chips draggable danger">Cherry</p>
+            <p class="chips draggable">Orange</p>
+            <p class="chips draggable subtle">Apple</p>
+            <p class="chips draggable primary">Guava</p>
+        </div>
+
+        <div class="dragdrop">
+
+        </div>
+    </section>
+
+    <script src="./chips.js"></script>
+</body>
+</html>

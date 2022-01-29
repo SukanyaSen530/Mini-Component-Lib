@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dialogs.css">
+    <title>Dialogues</title>
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous"
+      />
+</head>
+<body>
+
+    <section class="demo-section" id="demo-section-1">
+      <h3 class="demo-section-title">Alert</h3>
+      <button class="demo-section-btn" data-modal-target="alert-dialog">Open Alert Dialog</button>
+
+      <article class="dialog" id="alert-dialog">
+          <div class="dialog-header">
+            <h4 class="dialog-header-title">Dialog header</h4>
+            <p class="dialog-header-body">Dialog body text</p>
+          </div>
+
+        <div class="dialog-actions">
+           <button data-close-button>Action 1</button>
+           <button data-close-button>Action 2</button>
+        </div>
+    </article>
+    <div id="overlay"></div>
+
+    </section>
+
+
+    <section class="demo-section" id="demo-section-2">
+      <h3  class="demo-section-title">Simple</h3>
+      <button class="demo-section-btn" data-modal-target="simple-dialog">Open Simple Dialog</button>
+      
+      <article class="dialog simple" id="simple-dialog">
+        <h4 class="dialog-header-title">Dialog header</h4>
+
+        <div class="dialog-icon-actions">
+           <button><i class="fas fa-user-circle"></i>Item 1</button>
+           <button><i class="fas fa-user-circle"></i>Item 2</button>
+           <button><i class="fas fa-user-circle"></i>Item 3</button>
+        </div>
+    </article>
+    <div id="overlay"></div>
+     
+    
+    </section>
+
+
+    <section class="demo-section" id="demo-section-3">
+        <h3  class="demo-section-title">Confimation</h3>
+        <button class="demo-section-btn" data-modal-target="confirm-dialog">Open Confirmation Dialog</button>
+
+        <article class="dialog confirmation" id="confirm-dialog">
+            <h4 class="dialog-header-title">Dialog header</h4>
+
+            <div class="dialog-radio-container">
+                <div class="dialog-radio">
+                    <input type="radio" id="Item_1" name="dialog-item">
+                    <label for="Item_1">Item 1</label>
+                </div>
+               <div class="dialog-radio">
+                    <input type="radio" id="Item_2" name="dialog-item">
+                    <label for="Item_2">Item 2</label>
+               </div>
+               <div class="dialog-radio">
+                   <input type="radio" id="Item_3" name="dialog-item">
+                   <label for="Item_3">Item 3</label>
+               </div>
+               <div class="dialog-radio">
+                <input type="radio" id="Item_4" name="dialog-item">
+                <label for="Item_4">Item 4</label>
+               </div>
+            </div>
+    
+            <div class="dialog-actions">
+                <button data-close-button>Action 1</button>
+                <button data-close-button>Action 2</button>
+            </div>
+        </article>
+        <div id="overlay"></div>
+
+    </section>
+    
+
+    <script src="./dialogs.js"></script>
+</body>
+</html>

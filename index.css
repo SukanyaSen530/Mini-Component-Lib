@@ -1,0 +1,47 @@
+:root {
+  --main-color: rgb(63, 81, 181);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.home-section-nav {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+}
+
+.home-section-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-section-nav h2 {
+  text-align: center;
+  font-family: monospace;
+}
+
+.home-section-nav a {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  margin: 0.5rem;
+  width: 100px;
+  background-color: white;
+  color: black;
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.home-section-nav a:hover {
+  background-color: var(--main-color);
+  color: white;
+}

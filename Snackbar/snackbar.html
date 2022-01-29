@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./snackbar.css">
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous"
+      />
+    <title>Snackbar</title>
+</head>
+<body>
+    
+    <section class="demo-section">
+
+        <div class="btn-container">
+            <button class="sbtn" id="baseline-btn">Baseline</button>
+            <button class="sbtn" id="leading-btn">Leading</button>
+            <button class="sbtn" id="stacked-btn">Stacked</button>
+        </div>
+          
+         <div class="snackbar-alert visible" id="baseline-alert">
+             <p>Can't send photo. Retry in 5 seconds. </p>
+            <button class="snackbar-label-btn">UNDO</button>
+            <button class="snackbar-cancel"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="snackbar-alert visible" id="leading-alert">
+            <p>Your photo has been archived. </p>  <button class="snackbar-label-btn">Retry</button>
+            <button class="snackbar-cancel"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="snackbar-alert stacked visible" id="stacked-alert">
+            <p>This item already has the label "travel". You can add a new label.</p>
+            <div>
+                <button class="snackbar-label-btn">ADD A NEW LABEL</button>
+                <button class="snackbar-cancel"><i class="fas fa-times"></i></button>
+            </div>    
+        </div>
+
+    </section>
+
+    <script src="./snackbar.js"></script>
+</body>
+</html>
